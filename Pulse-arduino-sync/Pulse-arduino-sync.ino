@@ -57,7 +57,7 @@ void setup(){
     bool res;
     // res = wm.autoConnect(); // auto generated AP name from chipid
     // res = wm.autoConnect("AutoConnectAP"); // anonymous ap
-    wm.setConfigPortalTimeout(5200); //imposto i secondi di limite per impostare il wifi
+    wm.setConfigPortalTimeout(180); //imposto i secondi di limite per impostare il wifi (180 sono 3 minuti)
     res = wm.autoConnect("#CUOREDINAPOLI",""); // password protected ap
 
     if(!res) {
